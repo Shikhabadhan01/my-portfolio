@@ -4,18 +4,21 @@ body {
   font-family: 'Rubik', sans-serif;
   height: 100vh;
   overflow-x: hidden;
+  background: transparent;
+  position: relative;
 }
 .bg-blur {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(120, 0, 10, 0.8)), url("images/portfolio.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(3px);
-  z-index: 0;
+  z-index: -10;
+  backdrop-filter: blur(10px);
 }
 
 /* HEADER LAYOUT */
@@ -27,6 +30,7 @@ body {
   align-items: center;
   padding: 20px 80px;
   background-color: rgba(0, 0, 0, 0.4);
+  background: transparent;
 }
 
 .branding {
