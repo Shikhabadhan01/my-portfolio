@@ -314,15 +314,12 @@ intro h1:hover {
 
   input.btn {
     width: 100%;
-    text-align: center;
   }
-
   .intro {
           flex-direction: column;
-          text-align: center;
   }
-  
+
   .intro-img img {
-          max-width: 200px;
+          max-width: 250px;
   }
 }
