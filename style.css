@@ -1,7 +1,3 @@
-.container {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -278,64 +274,88 @@ intro h1:hover {
   max-width: 50%;
   border-radius: 10px;
 }
+ @media (max-width: 768px) {
+ 
+   * {
+     box-sizing: border-box;
+   }
 
-@media (max-width: 768px) {
-  /* Prevent overflow on small screens */
-  body {
-    overflow-x: hidden;
-  }
+   body {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+   }
 
-  .container {
-    padding: 0 16px;
-  }
+   .container {
+     padding: 0 16px;
+     width: 100%;
+   }
 
-  .intro {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 0;
-    gap: 20px;
-  }
+   .intro {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 20px 0;
+     gap: 20px;
+     text-align: center;
+   }
 
-  .intro-text {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 0 10px;
-  }
+   .intro-text {
+     width: 100%;
+     max-width: 100%;
+     padding: 0 10px;
+     text-align: center;
+   }
 
-  .intro-text h1,
-  .intro-text h2,
-  .intro-text p {
-    word-wrap: break-word;
-    text-align: center;
-  }
+   .intro-text h1,
+   .intro-text h2,
+   .intro-text p {
+     text-align: center;
+     word-wrap: break-word;
+   }
 
-  .intro-img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+   .intro-img {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+   }
 
-  .intro-img img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+   .intro-img img {
+     max-width: 200px;
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+   }
 
-  .nav-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
+   .buttons {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+   }
 
-  .btn {
-    width: 80%;
-    max-width: 300px;
-    text-align: center;
-  }
-}
+   .buttons .btn {
+     width: 80%;
+     max-width: 300px;
+     padding: 10px;
+     font-size: 16px;
+   }
+
+   .nav-buttons {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items: center;
+     width: 100%;
+   }
+
+   .nav-buttons .btn {
+     width: 80%;
+     max-width: 300px;
+   }
+ }
+
 
