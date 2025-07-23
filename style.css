@@ -316,4 +316,13 @@ intro h1:hover {
     width: 100%;
     text-align: center;
   }
+
+  .intro {
+          flex-direction: column;
+          text-align: center;
+  }
+  
+  .intro-img img {
+          max-width: 200px;
+  }
 }
