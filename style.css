@@ -1,3 +1,11 @@
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,14 +19,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(120, 0, 10, 0.8)), url("images/portfolio.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(3px);
-  z-index: -10;
-  backdrop-filter: blur(10px);
+  z-index: 0;
 }
 
 /* HEADER LAYOUT */
@@ -85,7 +92,7 @@ input.btn:hover {
   padding: 140px 80px;
   color: white;
   gap: 60px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .intro-text {
