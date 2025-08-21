@@ -98,7 +98,7 @@ input.btn:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 140px 80px;
+  padding: 90px 80px;
   color: white;
   gap: 60px;
   flex-wrap: nowrap;
